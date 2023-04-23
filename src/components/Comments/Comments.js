@@ -15,7 +15,7 @@ const Comments = () => {
             <Outlet/>
             {comments?.map(comment => (
                 <div key={comment.id}>
-                    <Link to={`/posts/${comment.id.toString()}`} state={comment.id}>
+                    <Link to={`posts/${comment.id.toString()}`} state={comment.id}>
                         {JSON.stringify(comment)}
                     </Link>
             </div>))}

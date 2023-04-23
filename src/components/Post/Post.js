@@ -9,7 +9,10 @@ const Post = () => {
         placeholderService.getPostById(location.state)
             .then(res => res.data)
             .then(res => setPost(res))
-    },[])
+    },[location.state])
+    if (!post) {
+        return <div>Please wait!</div>
+    }
     return (
         <div>
             {post && JSON.stringify(post)}
