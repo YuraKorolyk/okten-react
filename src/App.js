@@ -1,9 +1,10 @@
 import './App.css';
+import Users from "./components/Users/Users";
+import Cars from "./components/Cars/Cars";
 function App() {
   return (
-    <div className="App">
-   
-    </div>
+    // <Users/>
+      <Cars/>
   );
 }
 export default App;
